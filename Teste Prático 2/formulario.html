@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="João Acquesta">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+<style>
+    *{margin: 0; padding:0}
+    html{background-color: rgb(255, 255, 255);}
+    main {width:80%; text-align: center; margin: auto; background-color:#FFF; font-family:Roboto,'Arial Narrow Bold', sans-serif; overflow:hidden; padding:auto; background: linear-gradient(#0f949b,#41bac2,#f4ffff);}
+    header {width: 99,99%; height: 50px; padding-top: 5px; background: linear-gradient(#1e4143,#0f949b); color:#FFF; border: solid 1px #000000;}
+    #capa_ebook{width:50%; float:left; align-items: center; margin:10px; height: 700px}
+    #informacao{width:45%; float:left; align-items: center; margin:10px; height:700px}
+    #formulario{width: auto; padding-top: 20px; padding-left: 90px;}
+    input {display:block; margin:20px; border:1px solid #999; padding:8px; border-radius:3px; position: relative;}
+    img {width: 60%; padding:10px; border: solid 1px #1e4143;}
+    input:focus {border:1px solid #ccc;outline:none;}
+
+    h2, h3{color: rgb(255, 255, 255); font-size: 1,5em; padding-bottom: 2em;}
+    #texto{width:80%; margin-left:50px}
+    p {font-size:0,8em; padding: 10px; color:#FFF; margin-bottom: 100px;}
+
+    input[type=submit] {width:100px; color:#FFF; background:linear-gradient(top, #F33, #933 );
+	background:-webkit-linear-gradient(top, #1e4143, #933 );
+	background:-moz-linear-gradient(top, #F33, #933 );
+	border:1px solid #333;
+	cursor:pointer; margin-top: 100px; margin-left: 100px;
+}
+</style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Logo</h1>
+        </header>
+        <article>
+            <div id="capa_ebook">
+                <h2>E-BOOK GRATUITO</h2>
+                <img src="teste2_cricao_ebook.jpg">
+                
+            </div>
+            <div id="informacao">
+                <h2>BOOK TITLE</h2>
+                <div id="texto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas debitis, fugiat voluptatibus hic atque temporibus.</p>
+                </div>
+                <h3>Preencha o formulário abaixo para receber nosso e-book!</h3>
+                <div id="formulario">
+                <form action="#" method="post">
+                    <input type="text" id="nome" name="nome" size="30" maxlength="100" required placeholder="Informe seu nome" autofocus>                    
+                    <input type="email" id="email" name="email" size="30" maxlength="60" required placeholder="Informe seu e-mail">                
+                    <input type="tel" id="tel" name="tel" size="30" maxlength="15" required placeholder="Informe seu número de telefone">
+                    <input type="submit" value="Enviar" id="enviar" name="enviar">
+                </form>
+            </div>
+            </div>
+        </article>
+        <footer>
+            <small>2021 - Todos os direitos reservados</small>
+        </footer>
+    </main>
+</body>
+</html>
